@@ -14,6 +14,10 @@ public class Cat {
         this.food = meat;
     }
 
+    public void giveNick(String nick) {
+        this.name = nick;
+    }
+
     public static void main(String[] args) {
         System.out.println("There are gav's food.");
         Cat gav = new Cat();
@@ -26,9 +30,4 @@ public class Cat {
         black.eat("fish");
         black.show();
     }
-
-    public void giveNick(String nick) {
-        this.name = nick;
-    }
-
 }
