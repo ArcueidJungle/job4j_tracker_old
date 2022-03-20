@@ -3,6 +3,8 @@ package ru.job4j.oop;
 import org.junit.Assert;
 import org.junit.Test;
 
+import static java.lang.Math.sqrt;
+
 public class PointTest {
     @Test
     public void when00to20then2() {
@@ -39,4 +41,24 @@ public class PointTest {
         double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void when111to131then2() {
+        double expected = 2;
+        Point a = new Point(1, 1, 1);
+        Point b = new Point(1, 3, 1);
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
+    @Test
+    public void when121to114thenSqrt10() {
+        double expected = sqrt(10);
+        Point a = new Point(1, 2, 1);
+        Point b = new Point(1, 1, 4);
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
 }
+
