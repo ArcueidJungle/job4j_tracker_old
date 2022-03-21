@@ -47,4 +47,28 @@ public class MaxTest {
         int rsl = three.max(a, b, c);
         Assert.assertEquals(expected, rsl);
     }
+
+    @Test
+    public void when13and16and14and17then17() {
+        int a = 13;
+        int b = 16;
+        int c = 14;
+        int d = 17;
+        int expected = 17;
+        Max three = new Max();
+        int rsl = three.max(a, b, c, d);
+        Assert.assertEquals(expected, rsl);
+    }
+
+    @Test
+    public void when10and1and12and5then12() {
+        int a = 10;
+        int b = 1;
+        int c = 12;
+        int d = 5;
+        int expected = 12;
+        Max three = new Max();
+        int rsl = three.max(a, b, c, d);
+        Assert.assertEquals(expected, rsl);
+    }
 }

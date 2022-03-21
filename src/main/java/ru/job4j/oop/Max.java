@@ -6,7 +6,10 @@ public class Max {
     }
 
     public int max(int a, int b, int c) {
-        int temp = max(a, b);
-        return max(temp, c);
+        return max(max(a, b), c);
+    }
+
+    public int max(int a, int b, int c, int d) {
+        return max(max(a, b), max(c, d));
     }
 }
