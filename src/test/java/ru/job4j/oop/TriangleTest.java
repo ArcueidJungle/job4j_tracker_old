@@ -18,10 +18,10 @@ public class TriangleTest {
     }
 
     @Test
-    public void when00and40and02Then8() {
+    public void when00and1and2ThenMinus1() {
         Point a = new Point(0, 0);
-        Point b = new Point(0, 0);
-        Point c = new Point(0, 0);
+        Point b = new Point(1, 0);
+        Point c = new Point(2, 0);
         Triangle triangle = new Triangle(a, b, c);
         double rsl = triangle.area();
         assertThat(rsl, closeTo(-1, 0.001));
