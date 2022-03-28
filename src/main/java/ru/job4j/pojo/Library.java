@@ -21,7 +21,7 @@ public class Library {
             System.out.println(bk.getName() + '-' + bk.getCount());
         }
         for (Book bk : lib) {
-            if (bk.getName().equals("Clean code")) {
+            if ("Clean code".equals(bk.getName())) {
                 System.out.println(bk.getName() + '-' + bk.getCount());
             }
         }
