@@ -8,8 +8,7 @@ public class Bus implements Transport {
     }
 
     @Override
-    public void
-    passengers(int ride) {
+    public void passengers(int ride) {
         System.out.println(" Число пассажиров:" + ride);
     }
 
